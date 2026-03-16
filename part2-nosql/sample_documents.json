@@ -1,0 +1,38 @@
+[
+  {
+    "product_id": "E1001",
+    "name": "Sony Wireless Headphones",
+    "category": "Electronics",
+    "price": 25000,
+    "specs": {
+      "voltage": "5V",
+      "battery_life": "30 hours",
+      "warranty": "2 years"
+    },
+    "tags": ["audio", "wireless", "noise-canceling"]
+  },
+  {
+    "product_id": "C2001",
+    "name": "Men's Cotton T-Shirt",
+    "category": "Clothing",
+    "price": 899,
+    "attributes": {
+      "size": "L",
+      "color": "Navy Blue",
+      "material": "100% Cotton"
+    },
+    "available_sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "product_id": "G3001",
+    "name": "Organic Almond Milk",
+    "category": "Groceries",
+    "price": 350,
+    "expiry_date": "2024-11-15",
+    "nutritional_info": {
+      "calories": 45,
+      "protein": "1g",
+      "sugar": "0g"
+    }
+  }
+]

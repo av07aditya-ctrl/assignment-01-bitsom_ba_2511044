@@ -1,0 +1,7 @@
+## Vector DB Use Case
+
+A traditional keyword-based database search (like an SQL `LIKE` query or standard Elasticsearch) would **not** suffice for a law firm trying to search 500-page contracts using plain English questions. 
+
+Keyword searches rely entirely on lexical matching—finding the exact letters and words typed by the user. If a lawyer searches for "What are the termination clauses?", a traditional database will only look for the exact words "termination" or "clauses". If the contract instead uses phrasing like "contract cancellation", "end of agreement", or "severance conditions", a keyword search will fail to return those highly relevant sections because the specific words don't match.
+
+A **Vector Database** solves this by using AI embeddings to capture the actual *semantic meaning* of the text. When a 500-page contract is ingested, the text is chunked and converted into high-dimensional numerical vectors. When the lawyer asks "What are the termination clauses?", the vector database converts that question into a vector as well. It then performs mathematical similarity searches (like Cosine Similarity) to find text chunks that exist in the same conceptual "space." Therefore, the vector database understands that "termination" and "cancellation" mean the exact same thing, easily fetching the correct clauses even if the lawyer used completely different vocabulary than the document itself.
